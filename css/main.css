@@ -11,15 +11,25 @@ body {
 
 .logo-wrapper {
   flex: 1;
+  margin-top: 5px;
 }
 
 a {
   padding: 15px 10px 10px 10px;
   text-decoration: none;
   font-size: 14px;
+  font-weight: 600;
 }
 
-/* Top Background image */
+a:visited {
+  color: #4F4F4F;
+}
+
+a:hover {
+  color: #75A3BA;
+}
+
+/* Landing page runner image */
 .background {
   background-image: url('../images/Background.png');
   height: 100vh;
@@ -27,7 +37,6 @@ a {
   background-repeat: no-repeat;
 }
 
-/* First Section with runner image */
 .onbackground {
   width: 100%;
   top: 38%;
@@ -41,11 +50,17 @@ a {
   vertical-align: middle;
 }
 
+.sect1-stat span {
+  font-size: 18px;
+}
+
 .sect1-stat {
   line-height: 38px;
   font-size: 30px;
-  display: inline-block;
+  font-weight: 700;
+  letter-spacing: 1px;
   text-align: left;
+  display: inline-block;
   vertical-align: middle;
 }
 
@@ -63,47 +78,42 @@ a {
   vertical-align: middle;
 }
 
-i {
-  border: solid #ffffff;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 3px;
-  vertical-align: middle;
-}
-
 .arrow {
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
+  display: inline-block;
   vertical-align: middle;
 }
 
 .more {
-  margin-top: 315px;
-  font-family: 'Roboto', sans-serif;
+  margin-top: 290px;
+  letter-spacing: 2.5px;
 }
 
-/* Second section, blue colored section */
+/* Blue1 section - first blue colored section */
 .blue-background {
-  padding: 30px 300px 30px 300px;
+  padding: 80px 300px 80px 300px;
   background-color: #3B8DBF;
 }
 
 .sect2 {
+  margin: 0;
+  padding-bottom: 25px;
   font-size: 26px;
+  letter-spacing: .5px;
   text-align: center;
-  font-weight: bold;
+  font-weight: 700;
   color: #ffffff;
 }
 
 .sect2-1 {
   margin: 0 auto;
   padding-right: 40px;
+  font-weight: 700;
   font-size: 22px;
   color: #ffffff;
   display: table;
 }
 
-/* Third section */
+/* White1 section - first white background section */
 .sect3, .sect3-1, .sect5 {
   margin: 60px 0px 100px 5px;
   text-align: center;
@@ -114,19 +124,21 @@ i {
 }
 
 .chat-icon img, .chat-icon p {
+  margin-right: 20px;
   display: inline-block;
   vertical-align: middle;
-  margin-right: 20px;
 }
 
 .chat-icon p {
   font-style: italic;
   font-weight: 600;
   font-size: 18px;
+  letter-spacing: 1px;
   color: #4F4F4F;
 }
 
 .chat-icon img {
+  margin-left: 20px;
   height: 100%;
 }
 
@@ -140,15 +152,19 @@ i {
 }
 
 .flag img {
-  height: 150px;
   margin-right: 80px;
+  height: 150px;
+}
+
+.goals p {
+  margin-top: 0;
 }
 
 .goals {
   display: inline-block;
   vertical-align: middle;
-  margin-bottom: 10px;
-  font-weight: lighter;
+  letter-spacing: 1px;
+  font-weight: 300;
   font-size: 30px;
   text-align: left;
 }
@@ -176,7 +192,7 @@ i {
   margin-top: 160px;
 }
 
-/* Third part of section three */
+/* White1 part2 of section */
 table {
   font-weight: normal;
   text-align: center;
@@ -232,12 +248,12 @@ table {
   height: 45px;
 }
 
-/* fourth section  */
 .disclaimer {
   padding: 150px 0px 60px 0px;
   text-align: center;
 }
 
+/* Blue2 section - second blue section  */
 .verbiage {
   vertical-align: middle;
   font-style: italic;
@@ -262,6 +278,7 @@ table {
   color: #ffffff;
 }
 
+/* White2 section - second white Section */
 .sect5-1, .sect5-2, .visit {
   display: inline-block;
 }
@@ -326,7 +343,7 @@ table {
   height: 1px;
 }
 
-/* Sixth section (gray background) */
+/* Gray Section - gray background) */
 .sect6 {
   padding: 100px 0px 100px 0px;
   background-color: #828282;
@@ -357,28 +374,6 @@ table {
   }
 }
 
-/*
-.email {
-  border-radius: 25px;
-  width: 400px;
-  height: 52px;
-  font-size: 14px;
-  color: #828282;
-  background: #ffffff;
-  display: inline-block;
-  margin-right: 5px;
-}
-
-.sign-up {
-  border-radius: 25px;
-  width: 120px;
-  height: 52px;
-  font-size: 14px;
-  color: #ffffff;
-  background: #77BDD9;
-  display: inline-block;
-}
-  */
 .email {
   border-radius: 25px;
   width: 400px;
@@ -409,7 +404,7 @@ input {
   text-align: center;
 }
 
-/* Footer - last Section */
+/* Footer Section - last Section */
 .footer {
   padding: 100px 0px 100px 0px;
   text-align: center;
@@ -455,22 +450,3 @@ input {
   letter-spacing: 2px;
   color: #828282;
 }
-
-/*
-.email {
-  border-radius: 25px;
-  width: 400px;
-  height: 52px;
-  border: #ffffff;
-  color: #828282;
-}
-
-.sign-up {
-  border-radius: 25px;
-  width: 120px;
-  height: 52px;
-  border: #77BDD9;
-  background-color: #77BDD9;
-  color: #ffffff;
-}
- */
