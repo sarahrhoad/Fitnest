@@ -5,20 +5,26 @@ body {
 
 /* Top Banner section */
 .top-banner {
-  padding: 10px;
+  height: 80px;
   display: flex;
+  box-shadow: 0px 1px 10px #828282;
 }
 
-.logo-wrapper {
+.logo {
   flex: 1;
-  margin-top: 5px;
+  margin: 21px 0px 0px 10px;
+}
+
+.logo img {
+  width: 123px;
+  height: 38px;
 }
 
 a {
-  padding: 15px 10px 10px 10px;
+  padding: 30px 30px 0px 0px;
   text-decoration: none;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 a:visited {
@@ -84,14 +90,20 @@ a:hover {
 }
 
 .more {
-  margin-top: 290px;
+  margin-top: 315px;
+  font-size: 14px;
   letter-spacing: 2.5px;
+}
+
+.more p {
+  margin: 7px;
 }
 
 /* Blue1 section - first blue colored section */
 .blue-background {
-  padding: 80px 300px 80px 300px;
+  padding: 96px 300px 96px 300px;
   background-color: #3B8DBF;
+  box-shadow: 0px 1px 10px #1A4456;
 }
 
 .sect2 {
@@ -100,14 +112,14 @@ a:hover {
   font-size: 26px;
   letter-spacing: .5px;
   text-align: center;
-  font-weight: 700;
+  font-weight: 800;
   color: #ffffff;
 }
 
 .sect2-1 {
   margin: 0 auto;
   padding-right: 40px;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 22px;
   color: #ffffff;
   display: table;
@@ -115,7 +127,7 @@ a:hover {
 
 /* White1 section - first white background section */
 .sect3, .sect3-1, .sect5 {
-  margin: 60px 0px 100px 5px;
+  margin: 70px 0px 160px 0px;
   text-align: center;
 }
 
@@ -131,14 +143,14 @@ a:hover {
 
 .chat-icon p {
   font-style: italic;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 18px;
   letter-spacing: 1px;
   color: #4F4F4F;
 }
 
 .chat-icon img {
-  margin-left: 20px;
+  margin-left: 55px;
   height: 100%;
 }
 
@@ -152,12 +164,12 @@ a:hover {
 }
 
 .flag img {
-  margin-right: 80px;
+  margin-right: 105px;
   height: 150px;
 }
 
 .goals p {
-  margin-top: 0;
+  margin: 0px 0px 10px 0px;
 }
 
 .goals {
@@ -189,7 +201,7 @@ a:hover {
   height: 1px;
   vertical-align: middle;
   display: inline-block;
-  margin-top: 160px;
+  margin-top: 170px;
 }
 
 /* White1 part2 of section */
@@ -203,20 +215,23 @@ table {
   table-layout: fixed;
 }
 
+.local-icon img, .trainer-icon img {}
+
 .h1, .h2 {
-  font-weight: normal;
+  margin-top: 5px;
+  font-weight: 500;
 }
 
 /* first column from left to right */
 .col-1 {
   padding-right: 15px;
-  font-weight: normal;
+  font-weight: 500;
   text-align: right;
 }
 
 .col-1a {
   padding-right: 15px;
-  font-weight: bold;
+  font-weight: 700;
   text-align: right;
 }
 
@@ -228,28 +243,28 @@ table {
 }
 
 .col-2a {
-  font-weight: bold;
-  background-color: #7A008680;
+  font-weight: 700;
+  background-color: #7A008675;
   width: 142px;
   height: 45px;
 }
 
 /* third column from left to right */
 .col-3 {
-  background-color: #25006355;
+  background-color: #25006335;
   width: 142px;
   height: 45px;
 }
 
 .col-3a {
-  font-weight: bold;
+  font-weight: 700;
   background-color: #25006375;
   width: 142px;
   height: 45px;
 }
 
 .disclaimer {
-  padding: 150px 0px 60px 0px;
+  padding: 200px 0px 100px 0px;
   text-align: center;
 }
 
@@ -258,22 +273,30 @@ table {
   vertical-align: middle;
   font-style: italic;
   font-size: 12px;
-  font-weight: lighter;
+  font-weight: 300;
   color: #4F4F4F;
 }
 
+.blue-background2 {
+    padding: 80px 300px 80px 300px;
+    background-color: #3B8DBF;
+    box-shadow: 0px -1px 10px #1A4456;
+}
+
 .sect4 {
-  padding-top: 40px;
+  margin: 0;
+  margin-top: 10px;
   font-size: 26px;
   text-align: center;
-  font-weight: normal;
+  font-weight: 500;
   color: #ffffff;
 }
 
 .sect4a {
+  margin: 10px 10px;
   font-size: 36px;
   text-align: center;
-  font-weight: bold;
+  font-weight: 600;
   font-style: italic;
   color: #ffffff;
 }
@@ -309,7 +332,7 @@ table {
   text-align: left;
   color: #4F4F4F;
   font-size: 18px;
-  font-weight: normal;
+  font-weight: 300;
   letter-spacing: 3%;
   line-height: 30px;
   margin: 0px;
@@ -318,6 +341,7 @@ table {
 .part2 {
   text-align: left;
   font-size: 14px;
+  font-weight: 300;
   letter-spacing: 3%;
   vertical-align: top;
   color: #828282;
@@ -349,6 +373,7 @@ table {
   background-color: #828282;
   color: #ffffff;
   text-align: center;
+  /* box-shadow: 0px 1px 10px #828282; */
 }
 
 .sect6 span {
@@ -364,6 +389,7 @@ table {
 
 .regular {
   font-size: 18px;
+  font-weight: 300;
   letter-spacing: .5px;
 }
 
@@ -376,6 +402,9 @@ table {
 
 .email {
   border-radius: 25px;
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 2px;
   width: 400px;
   height: 52px;
   border: #ffffff;
@@ -383,7 +412,11 @@ table {
 }
 
 .sign-up {
+  margin-left: 6px;
   border-radius: 25px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-size: 14px;
   width: 120px;
   height: 52px;
   border: #77BDD9;
@@ -406,7 +439,7 @@ input {
 
 /* Footer Section - last Section */
 .footer {
-  padding: 100px 0px 100px 0px;
+  padding: 100px 280px 100px 0px;
   text-align: center;
 }
 
@@ -418,18 +451,27 @@ input {
 .share {
   color: #828282;
   display: inline-block;
-  margin-right: 80px;
+  margin-right: 90px;
 }
 
 .reference {
-  font-weight: bold;
+  font-weight: 600;
   font-style: italic;
   font-size: 14px;
   letter-spacing: 1px;
 }
 
+.share a:link, .share a:visited,
+.share a:hover, .share a:active  {
+  color: #828282;
+}
+
+.share .websites {
+  margin: 0px 0px 5px 0px;
+}
+
 .websites, .copyright {
-  font-weight: lighter;
+  font-weight: 300;
   font-size: 12px;
   letter-spacing: 1px;
   text-align: left;
@@ -449,4 +491,12 @@ input {
   font-style: italic;
   letter-spacing: 2px;
   color: #828282;
+}
+
+.social-media img {
+  margin-right: 15px;
+}
+
+.share a, .social-media a {
+  padding: 0;
 }
