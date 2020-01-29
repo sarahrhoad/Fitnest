@@ -5,26 +5,32 @@ body {
 
 /* Top Banner section */
 .top-banner {
-  height: 80px;
+  padding: 16px;
+  position: fixed;
+  background-color: #fff;
+  left: 0;
+  right: 0;
   display: flex;
   box-shadow: 0px 1px 10px #828282;
+  z-index: 1;
 }
 
 .logo {
   flex: 1;
-  margin: 21px 0px 0px 15px;
 }
 
 .logo img {
-  width: 123px;
-  height: 38px;
+  margin-bottom: -3px;
+  height: 30px;
 }
 
 a {
-  padding: 30px 30px 0px 0px;
+  margin-right: 2px;
   text-decoration: none;
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 12px;
+  font-weight: 600;
+  align-self: center;
+  letter-spacing: .5px;
 }
 
 a:visited {
@@ -37,18 +43,21 @@ a:hover {
 
 /* Landing page runner image */
 .background {
-  background-image: url('../images/Background.png');
   height: 100vh;
-  overflow: auto;
-  background-repeat: no-repeat;
+  background: url(../images/Background.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .onbackground {
   width: 100%;
-  top: 38%;
   position: absolute;
   text-align: center;
   color: white;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .sect1-percentage {
@@ -90,9 +99,13 @@ a:hover {
 }
 
 .more {
-  margin-top: 315px;
   font-size: 14px;
   letter-spacing: 2.5px;
+  position: absolute;
+  bottom: 14px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
 }
 
 .more p {
@@ -101,7 +114,6 @@ a:hover {
 
 /* Blue1 section - first blue colored section */
 .blue-background {
-  padding: 96px;
   background-color: #3B8DBF;
   box-shadow: 0px 1px 10px #1A4456;
   text-align: center;
@@ -113,6 +125,10 @@ a:hover {
 
 .blue-background ul {
   text-align: left;
+}
+
+.container {
+  padding: 96px;
 }
 
 .sect2 {
@@ -132,6 +148,10 @@ a:hover {
   font-size: 22px;
   color: #ffffff;
   display: table;
+}
+
+.item1 {
+  padding-bottom: 5px
 }
 
 /* White1 section - first white background section */
@@ -205,12 +225,9 @@ a:hover {
 }
 
 .blue-line {
+  margin: 170px 20% 0 20%;
   background-color: #3B8DBF;
-  width: 1000px;
   height: 1px;
-  vertical-align: middle;
-  display: inline-block;
-  margin-top: 170px;
 }
 
 /* White1 part2 of section */
@@ -223,8 +240,6 @@ table {
   width: 500px;
   table-layout: fixed;
 }
-
-.local-icon img, .trainer-icon img {}
 
 .h1, .h2 {
   margin-top: 5px;
@@ -273,7 +288,8 @@ table {
 }
 
 .disclaimer {
-  padding: 200px 0px 100px 0px;
+  padding-top: 200px;
+  padding-bottom: 100px;
   text-align: center;
 }
 
@@ -395,13 +411,6 @@ table {
   letter-spacing: .5px;
 }
 
-@media only screen and (max-width: 904px) {
-  .visit {
-    margin-top: 20px;
-    margin-right: 75px;
-  }
-}
-
 .email {
   border-radius: 25px;
   font-weight: 300;
@@ -438,7 +447,7 @@ input[type='submit'] {
   box-shadow: 0px 2px 3px #00000090;
 }
 
-input[type='submit']:hover  {
+input[type='submit']:hover {
   background-color: #75A3BA;
   cursor: pointer;
   box-shadow: 0px 3px 3px #00000090;
@@ -513,4 +522,175 @@ input {
 
 .share a, .social-media a {
   padding: 0;
+}
+
+/* Mobile view for Landscape screens */
+@media only screen and (min-width:640px) and (max-width: 823px) and (orientation: landscape) {
+  .more {
+    height: auto;
+  }
+
+  .sect1-percentage {
+    width: 25%;
+    display: inline-block;
+  }
+
+  .sect1-stat {
+    font-size: 22px;
+  }
+
+  .sect1-stat span {
+    font-size: 13px;
+  }
+
+  .sect2 {
+    font-size: 22px;
+  }
+
+  .sect2-1 {
+    font-size: 18px;
+  }
+
+  .container {
+    padding: 60px;
+  }
+
+  .item1 {
+    padding-bottom: 15px;
+  }
+
+  .sect3, .sect3-1, .sect5 {
+    margin: 70px 0px 130px 0px;
+  }
+
+  .flag img {
+    margin: 0 0 70px 0;
+  }
+
+  .blue-line {
+    margin: 130px 20% 0 20%;
+  }
+
+  .visit {
+    margin: 50px 0 0 0;
+  }
+
+  table {
+    margin-bottom: 70px;
+  }
+
+  .sect4 {
+    font-size: 22px;
+  }
+
+  .bold {
+    margin: 0 70px;
+  }
+}
+
+
+/*
+@media only screen and (min-width:768px) and (max-width: 1024px) and (orientation: landscape) and (orientation: portrait){
+  .flag {
+    display: block;
+  }
+
+  .flag img {
+    margin: 0 0 70px 0;
+  }
+} */
+
+/* Mobile view for Portrait screens */
+@media only screen and (min-width: 360px) and (max-width: 614px) and (max-width: 768px) {
+  .background .onbackground {
+    text-align: left;
+  }
+
+  .sect1-stat p {
+    margin-top: 0;
+  }
+
+  .vertical-line {
+    display: none;
+  }
+
+  .sect2 {
+    font-size: 24px;
+  }
+
+  .sect2-1 {
+    font-size: 20px;
+  }
+
+  .sect3, .sect3-1, .sect5 {
+    margin: 70px 0 130px 0;
+  }
+
+  .chat-icon p {
+    margin-left: 20px;
+  }
+
+  .container {
+    padding: 40px;
+  }
+
+  .flag img {
+    margin: 0px 0px 70px 0px;
+  }
+
+  .blue-line {
+    margin: 130px 20% 0 20%;
+  }
+
+  table {
+    margin-bottom: 70px;
+    font-size: 10px;
+    width: 300px;
+    table-layout: fixed;
+  }
+
+  .local-icon img, .trainer-icon img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .h1, .h2 {
+    margin-top: 5px;
+  }
+
+  .col-1, .col-1a {
+    padding-right: 15px;
+  }
+
+  .col-2, .col-2a, .col-3, .col-3a {
+    width: 122px;
+    height: 30px;
+  }
+
+  .sect4 {
+    font-size: 22px;
+  }
+
+  .intencity, .interval, .visit {
+    margin: 0;
+  }
+
+  .part1 {
+    margin-top: 50px;
+  }
+
+  .bold {
+    margin: 0 10px;
+  }
+
+  .regular {
+    margin: 15px 10px;
+  }
+
+  .email {
+    margin-bottom: 20px;
+    width: 300px;
+  }
+
+
 }
